@@ -1,0 +1,182 @@
+/* Grand Budapest Hotel Color Palette
+https://www.color-hex.com/color-palette/30757
+
+Color       HEX         RGB
+Light Pink  #ffd8ec	    rgb(255,216,236)
+Pink        #ffa8cb	    rgb(255,168,203)
+Red         #e5000c	    rgb(229,0,12)
+Purple      #784283	    rgb(120,66,131)
+Yellow      #ddd690	    rgb(221,214,144) 
+*/
+
+:root{
+    --transition: all 0.5s ease;
+    --purple: #784283;
+    --dark: #301934;
+    --bg: rgba(255,168,203,.25);
+}
+
+.header{
+    background: rgba(120,66,131,0.4);
+    min-height: 20px;
+}
+
+.profile-pic-container {
+    margin-bottom: 1.5em;
+}
+
+.edit-image-btn {
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    border: none;
+    width: 40%;
+    max-width: 300px;
+    padding: .2em 0 .9em 0;
+}
+
+.profile-pic {
+    width: 40%;
+    max-width: 300px;
+    margin: 1em auto;
+    margin-bottom: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 25% 70%;
+    justify-content: space-around;
+    width: 95%;
+    margin: 2em auto;
+}
+
+.container {
+    color: #fff;
+    background-color: var(--dark);
+    text-align: center;
+    width: 100%;
+    min-height: 45vh;
+}
+
+.current-menu-container {
+    background-color: var(--bg);
+    padding-top: 3em;
+}
+
+.options-container {
+    background-color: var(--bg);
+    grid-column: 1;
+}
+
+.menu-container {
+    background-color: var(--bg);
+    grid-column: 2;
+    grid-row: 1 / span 2;
+}
+
+.option-btn {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 180px;
+    display: block;
+    margin: 15px auto;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.option-btn:hover {
+    opacity: .5;
+}
+
+.inner-container {
+    width: 80%;
+    margin: 2em auto;
+}
+
+.form-label {
+    background-color: #784283;
+    display: block;
+    width: 50%;
+    margin: .2em auto;
+    padding: .5em .4em;
+    text-align: left;
+}
+
+input {
+    padding: .8em .4em;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    outline: none;
+}
+
+input[type=submit] {
+    color: white;
+    border: none;
+    display: block;
+    outline: none;
+    margin: 3em auto;
+    font-weight: bold;
+    font-size: 1em;
+    transition: var(--transition);
+}
+
+input[type=submit]:hover {
+    opacity: 0.5;
+}
+
+table {
+    width: 100%;
+    margin: 2em auto;
+}
+
+th, td {
+    padding: .8em 0;
+    min-width: 80px;
+}
+
+.header-row {
+    background-color: #784283;
+    color: #fff;
+}
+
+.data-row {
+    background-color: #fff;
+    color: #301934;
+}
+
+.btns-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.booking-btn {
+    border: none;
+    color: #fff;
+    outline: none;
+    display: block;
+    font-size: .9em;    
+    font-weight: bold;
+    padding: .5em .4em;
+    transition: var(--transition);
+}
+
+.booking-btn:hover {
+    text-decoration: underline;
+    opacity: 0.5;
+}
+
+.review-btn {
+    background-color: green;
+}
+
+.modify-btn {
+    background-color: orange;
+}
+
+.cancel-booking-btn {
+    background-color: red;
+}
